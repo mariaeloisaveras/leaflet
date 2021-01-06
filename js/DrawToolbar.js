@@ -9,11 +9,11 @@ L.DrawToolbar = L.Toolbar.extend({
 	},
 
 	options: {
-		polyline: {},
+		// polyline: {},
 		polygon: {},
-		rectangle: {},
+		// rectangle: {},
 		// circle: {},
-		marker: {},
+		// marker: {},
 		// circlemarker: {}
 	},
 
@@ -36,31 +36,31 @@ L.DrawToolbar = L.Toolbar.extend({
 	// Get mode handlers information
 	getModeHandlers: function (map) {
 		return [
-			{
-				enabled: this.options.polyline,
-				handler: new L.Draw.Polyline(map, this.options.polyline),
-				title: L.drawLocal.draw.toolbar.buttons.polyline
-			},
+			// {
+			// 	enabled: this.options.polyline,
+			// 	handler: new L.Draw.Polyline(map, this.options.polyline),
+			// 	title: L.drawLocal.draw.toolbar.buttons.polyline
+			// },
 			{
 				enabled: this.options.polygon,
 				handler: new L.Draw.Polygon(map, this.options.polygon),
 				title: L.drawLocal.draw.toolbar.buttons.polygon
 			},
-			{
-				enabled: this.options.rectangle,
-				handler: new L.Draw.Rectangle(map, this.options.rectangle),
-				title: L.drawLocal.draw.toolbar.buttons.rectangle
-			},
+			// {
+			// 	enabled: this.options.rectangle,
+			// 	handler: new L.Draw.Rectangle(map, this.options.rectangle),
+			// 	title: L.drawLocal.draw.toolbar.buttons.rectangle
+			// },
 			// {
 			// 	enabled: this.options.circle,
 			// 	handler: new L.Draw.Circle(map, this.options.circle),
 			// 	title: L.drawLocal.draw.toolbar.buttons.circle
 			// },
-			{
-				enabled: this.options.marker,
-				handler: new L.Draw.Marker(map, this.options.marker),
-				title: L.drawLocal.draw.toolbar.buttons.marker
-			},
+			// {
+			// 	enabled: this.options.marker,
+			// 	handler: new L.Draw.Marker(map, this.options.marker),
+			// 	title: L.drawLocal.draw.toolbar.buttons.marker
+			// },
 			// {
 			// 	enabled: this.options.circlemarker,
 			// 	handler: new L.Draw.CircleMarker(map, this.options.circlemarker),
